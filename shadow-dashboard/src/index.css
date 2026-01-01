@@ -1,0 +1,42 @@
+:root {
+  font-family: 'Courier New', Courier, monospace; /* Fuente retro */
+  background-color: #050505; /* Casi negro absoluto */
+  color: #0f0; /* Verde terminal por defecto */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Evita scrolls dobles */
+}
+
+/* Scrollbar personalizada (muy fina y oscura) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0d1117; 
+}
+::-webkit-scrollbar-thumb {
+  background: #333; 
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #58a6ff; 
+}
+
+/* Efecto de parpadeo para el cursor */
+@keyframes blink {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+.cursor {
+  display: inline-block;
+  width: 10px;
+  height: 18px;
+  background-color: #0f0;
+  animation: blink 1s infinite;
+  vertical-align: middle;
+}
